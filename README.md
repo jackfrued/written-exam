@@ -4,6 +4,13 @@
 
 1. 编写一个递归版本的 reverse(s) 函数(或方法),以将字符串s倒置。
 
+```Python
+def reverse(s):
+    if len(s) <= 1:
+        return s
+    return reverse(s[1:]) + s[0]
+```
+
 2. 编写程序 expr，以计算从命令行输入的逆波兰表达式的值，其中每个运算符或操作数用一个单独的参数表示。例如，命令
 expr 2 3 4 + *
 
